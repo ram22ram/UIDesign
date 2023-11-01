@@ -1,0 +1,539 @@
+body{
+    background-color: #f0f0f0;
+}
+h1{
+    font-weight: 100;
+}
+
+/*------------Navbar css starts here -----------*/
+.btn:hover{
+    color: #ffffff;
+    background-color: #000;
+    
+}
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.btn-active{
+    background-color: #91a9a9;
+    color: #fff;
+
+}
+.navbar-toggler-icon{
+    background-color: #000;
+}
+/*------------Navbar css ends here -----------*/
+/*------------Crousel css starts here -----------*/
+.carousel {
+    position: relative;
+  }
+.crousel-btn-prev-1{
+    background-color: #cc6640;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 83%;
+    left:8%;
+    
+}
+.crousel-btn-next-1{
+    background-color: #cc6640;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 83%;
+    
+    
+}
+  .carousel-caption {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  /* Default styles for text2 */
+.text2 {
+    display: inline-block;
+    font-size: 4vw;
+    transform: scale(2.0, 2);
+    font-weight: 400;
+}
+
+/* Default styles for text1 */
+.text1 {
+    display: inline-block;
+    font-size: 3vw;
+    transform: scale(2.0, 2);
+    font-weight: 100;
+}
+.carousel-control-next-1{
+    left:0;
+    bottom: 0;
+    
+}
+
+  .carousel-text1{
+    font-size: larger;
+  }
+  .carousel-btn{
+    color: #fff;
+    background: #cb633e;
+    text-decoration: none;
+    
+    
+  }
+  .carousel-control-prev-icon-1{
+    align-self:last baseline;
+  }
+  .carousel-control-next-icon-1{
+    align-self:last baseline;
+    right: 1;
+    
+
+  }
+  .carousel-control-prev-1{
+    bottom: 10px; /* Adjust this value to your liking */
+  }
+ 
+  
+  .carousel-control-prev-1 {
+    left: 10px; /* Adjust this value to your liking */
+  }
+  
+  .carousel-control-next-1 {
+    left: 12%; /* Adjust this value to your liking */
+  }
+/* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    .text2 {
+        font-size: 6vw; /* Adjust the font size for smaller screens */
+        transform: scale(1.5, 1.5); /* Adjust the scaling for smaller screens */
+    }
+
+    .text1 {
+        font-size: 4vw; /* Adjust the font size for smaller screens */
+        transform: scale(1.5, 1.5); /* Adjust the scaling for smaller screens */
+    }
+    .carousel-btn{
+        display: none;
+    }
+}
+
+/* Add more media queries for other screen sizes if necessary */
+
+/*------------Crousel css ends here -----------*/
+/*------------Gallery css starts here----------*/
+.item-gallery{
+    width: 100%;
+    height: auto;
+    background: #90a8a8;
+}
+.gallery-background{
+    background-color: #91a9a9;
+}
+
+.heading-text1{
+    font-weight: 100;
+
+}
+.gallery-text-p{
+    font-style: italic;
+}
+
+.outercircle::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #abc0c1;
+    left: -50px;
+    top: 46%;
+    position: absolute;
+    z-index: -1;
+}
+.circle::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #abc0c1;
+    left: -50px;
+    top: 57%;
+    position: absolute;
+    z-index: -1;
+}
+.circle::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    flex-grow: 2;
+    background: #abc0c1;
+    position: absolute;
+    right: -50px;
+    z-index: -1;
+    top: 56%;
+}
+.outercircle::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    /* flex-grow: 2; */
+    background: #abc0c1;
+    position: absolute;
+    right: -50px;
+    z-index: -1;
+    top: 45%;
+}
+.outercircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     /* Adjust this size as needed */
+    padding: 0;
+    position: relative;
+    z-index: 4;
+  }
+
+
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px; /* Adjust this size as needed */
+    height: 63px; /* Adjust this size as needed */
+    border-radius: 50%;
+    background-color: #ffffff;
+    outline: 2px solid #a8bebf;
+    border: 2px solid #a8bebf;
+    padding: 10%;
+    position: relative;
+    z-index: 4;
+  }
+.circle-svg{
+    color: #cf6243;
+}
+.margin-img{
+    margin-top: 12px;
+}
+
+
+/*------------Gallery css ends here----------*/
+/*------------Recent-work css starts here----------*/
+.line {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.line::before{
+    content: "";
+    flex-grow: 2;
+    height: 2px;
+    background-color: #333;
+}
+.line::after {
+    content: "";
+    flex-grow: 26;
+    height: 2px;
+    width: 60%;
+    background-color: #333;
+}
+
+
+.text {
+    padding: 0 20px; /* Add padding to separate text from lines */
+}
+
+.text-container {
+    flex-grow: 0;
+}
+.line::before{
+    content: "";
+    flex-grow: 2;
+    height: 2px;
+    background-color: #333;
+}
+
+/* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
+@media screen and (max-width: 390px) {
+    .line {
+        display:block;
+        align-items: center;
+        position: relative;
+    }
+    .font-size-gallery{
+        font-size: 2vw;
+        font-weight: 400;
+    
+    }
+    .line::before{
+        content: "";
+        flex-grow: 1;
+        height: 2px;
+        background-color: #333;
+    }
+    .line::after {
+        content: "";
+        flex-grow: 26;
+        height: 2px;
+        width: 60%;
+        background-color: #333;
+    }
+    
+    
+    .text {
+        padding: 0 20px; /* Add padding to separate text from lines */
+    }
+    
+    .text-container {
+        flex-grow: 0;
+    }
+    
+    
+    .line::before{
+        content: "";
+        flex-grow: 2;
+        height: 2px;
+        background-color: #333;
+    }
+}
+
+
+
+/*------------Recent-work css ends here----------*/
+/*----------------------carousel testimonial starts--*/
+
+
+.card-img{
+    margin-top: 5px;
+    padding-bottom: 0;
+}
+.card-title{
+    font-weight: 500;
+    color: #c96541;
+}
+.card-btn{
+    background-color: #90a8a8;
+    color: #fff;
+}
+
+
+.testimonial-bg{
+    background-color: #dacfa2;
+
+}
+
+.carousel-testimonial  .carousel-control-next{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #cd623e;
+    padding: 5px;
+    top: calc(50% - 15px);
+}
+.carousel-testimonial .carousel-control-prev{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #cd623e;
+    padding: 5px;
+    top: calc(50% - 15px);
+}
+
+.carousel-paragraph{
+    margin: 3%;
+    border-top: 2px solid #fff; /* Horizontal line above each paragraph */
+    border-bottom: 2px solid #fff; /* Horizontal line below each paragraph */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.crousel-btn-prev{
+    background-color: #cc6640; /* Background color for control buttons */
+    color: #fff; /* Text color for control buttons */
+    border-radius: 50%; /* Border radius for control buttons */
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    top:40%
+}
+.crousel-btn-next{
+    background-color: #cc6640; /* Background color for control buttons */
+    color: #fff; /* Text color for control buttons */
+    border-radius: 50%; /* Border radius for control buttons */
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    top:40%
+
+}
+.carousel-btn {
+    
+    justify-content: center;
+}
+.carousel-btn:hover {
+    background: #000;
+    color: #c96541;
+}
+/*----------------------carousel testimonial ends--*/
+/*-----------------------Blog starts here----------*/
+.line1 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.blog-icon-style{
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #cc6540;
+}
+
+.line1::before{
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background-color: #333;
+}
+.line1::after {
+    content: "";
+    flex-grow: 4.3;
+    height: 2px;
+    background-color: #333;
+}
+
+.text {
+    padding: 0 20px; /* Add padding to separate text from lines */
+}
+
+.text-container {
+    flex-grow: 0;
+}
+.line2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.line2::before{
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background-color: #333;
+}
+.line2::after {
+    content: "";
+    flex-grow: 7;
+    height: 2px;
+    background-color: #333;
+}
+
+.text {
+    padding: 0 20px; /* Add padding to separate text from lines */
+}
+
+.text-container {
+    flex-grow: 0;
+}
+/*-----------------------Blog ends here----------*/
+/*----------------------Footer starts here--------*/
+input {
+    text-align: center;
+  }
+  
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  
+  :-moz-placeholder {
+    text-align: center;
+  }
+.btn-subscribe{
+    border: 1px solid #ca643e;
+    background-color: #ca643e;
+    margin-left: 3rem;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    width: 65%;
+    
+}
+
+.footer-input{
+    height:41px; 
+    width: 80%;
+    margin-left: 25px;
+}
+.text-footer-1{
+    font-weight: 400;
+}
+input:placeholder-shown {
+    font-style: italic;
+ }
+.copyright-style{
+    font-size: 15px;
+}
+.bg-footer{
+    background-color: #282828;
+}
+.copyright-text{
+    color: #939393;
+}
+/* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
+@media (max-width: 1000px) {
+    .btn-mobile{
+        border: 1px solid #ca643e;
+        background-color: #ca643e;
+        margin-left: 5rem;
+        display: block;
+        border-radius: 5px;
+        text-align: center;
+        width: 55%;
+
+    }
+
+}
+@media (max-width: 796px) {
+    .btn-mobile{
+        border: 1px solid #ca643e;
+        background-color: #ca643e;
+        margin-left: 6rem;
+        display: block;
+        border-radius: 5px;
+        text-align: center;
+        width: 65%;
+
+    }
+
+}
+@media (max-width: 430px) {
+    .btn-mobile{
+        border: 1px solid #ca643e;
+        background-color: #ca643e;
+        margin-left: 5rem;
+        display: block;
+        border-radius: 5px;
+        text-align: center;
+        width: 65%;
+
+    }
+
+}
+@media (max-width: 380px) {
+    .btn-mobile{
+        border: 1px solid #ca643e;
+        background-color: #ca643e;
+        margin-left: 4.2rem;
+        display: block;
+        border-radius: 5px;
+        text-align: center;
+        width: 65%;
+
+    }
+
+}
+
+/*----------------------Footer ends here--------*/
