@@ -1,0 +1,207 @@
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/* * Sidebar */
+.nav-menu:hover{
+  background: #000000;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 21px;
+
+}
+.accordion-text:hover{
+  background-color: #ff0000;
+  border-radius: 21px;
+}
+
+/*----------------Side Navbar----------- */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+.btn-inbox:hover{
+  background-color: #6c757d;
+  color: #ffffff;
+}
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+/*---------accordion button--------*/
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+/*--------media query------------*/
+/* Media query to hide Search input on mobile views */
+@media (max-width: 767px) {
+  .search {
+    display: none;
+  }
+
+/*-----------counter box--------------*/
+
+.counter-box-1{
+  border: 2px solid #dbf3ff;
+  border-radius: 21px;
+  background-color: #dbf3ff;
+  color: #000000;
+  padding-top: 5px;
+   
+}
+.counter-box-2{
+  border: 2px solid #ebfba1;
+  border-radius: 21px;
+  background-color: #ebfba1;
+  color: #000000;
+  padding-top: 5px;
+   
+}
+.counter-box-3{
+  border: 2px solid #e9dcff;
+  border-radius: 21px;
+  background-color: #e9dcff;
+  color: #000000;
+  padding-top: 5px;
+   
+}
+.icon-box{
+  border: 2px solid #ffffff;
+  padding: 2px;
+  background-color: #ffffff;
+}
+/*-----------------graph---------------*/
+.chart-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+  gap: 20px; /* Add some gap between charts */
+  background: #f0f8ff;
+}
+
+.chart {
+  width: 100%;
+  max-width: 300px; /* Set a maximum width for each chart */
+}
+/*--------Table---------*/
+.table-heading{
+  border-top: 1px solid #dee2e6;
+  padding: 0.75rem;
+  
+}
+.table-row{
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+/*------streamline--------*/
+
+.streamline .sl-primary {
+  border-left-color: #188ae2;
+}
+
+.streamline .sl-item {
+  position: relative;
+  padding-bottom: 12px;
+  border-left: 1px solid #ccc;
+}
+
+.streamline .sl-item:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  background-color: #ccc;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+.streamline .sl-primary:before{
+  background-color: #188ae2;
+}
+ .streamline .sl-primary:last-child:after {
+  background-color: #188ae2;
+}
+
+
+.streamline .sl-danger:before
+{
+  background-color: #ff5b5b;
+
+}
+.streamline .sl-danger:last-child:after {
+  background-color: #ff5b5b;
+}
+
+.streamline .sl-success {
+  border-left-color: #10c469;
+}
+
+.streamline .sl-success:before {
+  background-color: #10c469;
+}
+.streamline .sl-success:last-child:after {
+  background-color: #10c469;
+}
+.streamline .sl-warning {
+  border-left-color: #f9c851;
+}
+
+.streamline .sl-warning:before{
+  background-color: #f9c851;
+}
+.streamline .sl-warning:last-child:after {
+  background-color: #f9c851;
+}
+
+.streamline .sl-danger {
+  border-left-color: #ff5b5b;
+}
+.streamline .sl-item .sl-content {
+  margin-left: 24px;
+}
+
+.streamline .sl-item .text-muted {
+  color: inherit;
+  opacity: .6;
+font-size:12px;
+}
+
+.streamline .sl-item p {
+font-size:14px;
+color:#333;
+}
+/*--------footer--------*/
