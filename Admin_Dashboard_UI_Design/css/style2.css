@@ -1,0 +1,140 @@
+.chart-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Create 3 equal-width columns */
+    gap: 20px;
+    /* Add some gap between charts */
+    background: #f0f8ff;
+  }
+  
+  .chart {
+    width: 100%;
+    max-width: 300px;
+    /* Set a maximum width for each chart */
+  }
+  
+  .bg-earning {
+    background-color: azure;
+  
+  }
+  
+  /*-----------------charts ends---------------*/
+  
+  /*------streamline starts--------*/
+  
+  .streamline .sl-primary {
+    border-left-color: #188ae2;
+  }
+  
+  .streamline .sl-item {
+    position: relative;
+    padding-bottom: 12px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .streamline .sl-item:before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    background-color: #ccc;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+  }
+  
+  .streamline .sl-primary:before {
+    background-color: #188ae2;
+  }
+  
+  .streamline .sl-primary:last-child:after {
+    background-color: #188ae2;
+  }
+  
+  
+  .streamline .sl-danger:before {
+    background-color: #ff5b5b;
+  
+  }
+  
+  .streamline .sl-danger:last-child:after {
+    background-color: #ff5b5b;
+  }
+  
+  .streamline .sl-success {
+    border-left-color: #10c469;
+  }
+  
+  .streamline .sl-success:before {
+    background-color: #10c469;
+  }
+  
+  .streamline .sl-success:last-child:after {
+    background-color: #10c469;
+  }
+  
+  .streamline .sl-warning {
+    border-left-color: #f9c851;
+  }
+  
+  .streamline .sl-warning:before {
+    background-color: #f9c851;
+  }
+  
+  .streamline .sl-warning:last-child:after {
+    background-color: #f9c851;
+  }
+  
+  .streamline .sl-danger {
+    border-left-color: #ff5b5b;
+  }
+  
+  .streamline .sl-item .sl-content {
+    margin-left: 24px;
+  }
+  
+  .streamline .sl-item .text-muted {
+    color: inherit;
+    opacity: .6;
+    font-size: 12px;
+  }
+  
+  .streamline .sl-item p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  
+  /*------streamline ends--------*/
+  
+  
+  /*------Table starts----------------*/
+  .table-img-1{
+    width: 9px;
+    height: 12px;
+  }
+  .table-width-text-1{
+    width: 88.7188px;
+  }
+  .table-width-text-2{
+    width: 119.906px;
+  }
+  .table-width-text-3{
+    width: 89.375px;
+  }
+  .table-width-text-4{
+    width: 63.2031px;
+  }
+  .table-width-text-5{
+    width: 75.3125px;
+  }
+  .table-width-text-6{
+    width: 106.797px;
+  }
+  .table-width-text-7{
+    width: 53.2969px;
+  }
+  .table-width-text-8{
+    width: 51.6406px;
+  }
+  

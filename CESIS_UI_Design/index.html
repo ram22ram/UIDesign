@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CESIS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Syne&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Kit -->
+<script src="https://kit.fontawesome.com/c0081add02.js" crossorigin="anonymous"></script>
+
+<!-- Customized Bootstrap Stylesheet-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo.png" alt="...">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="dropdown">
+                        <button
+                          class="btn btn-white dropdown-toggle fw-bold"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-mdb-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          HOME
+                          <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <button
+                          class="btn btn-white dropdown-toggle text-uppercase fw-bold"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-mdb-toggle="dropdown"
+                          aria-expanded="false"
+                        >Demos
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <button
+                      class="btn btn-white dropdown-toggle text-uppercase fw-bold"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-mdb-toggle="dropdown"
+                      aria-expanded="false"
+                    >Pages
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+                    <li class="dropdown">
+                        <button
+                          class="btn btn-white dropdown-toggle text-uppercase fw-bold"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-mdb-toggle="dropdown"
+                          aria-expanded="false"
+                        >Elements
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                    <li class="dropdown">
+                        <button
+                          class="btn btn-white dropdown-toggle text-uppercase fw-bold"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-mdb-toggle="dropdown"
+                          aria-expanded="false"
+                        >Portfolio
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                    <li class="dropdown">
+                        <button
+                          class="btn btn-white dropdown-toggle text-uppercase fw-bold"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-mdb-toggle="dropdown"
+                          aria-expanded="false"
+                        >Blog
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                    <li class="dropdown">
+                        <button
+                          class="btn btn-white dropdown-toggle text-uppercase fw-bold"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-mdb-toggle="dropdown"
+                          aria-expanded="false"
+                        >Shop
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-search"  id="searchIcon" aria-hidden="true"></i>
+                            <input type="text" id="search">
+                            <i id="clear" class="material-icons">clear</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Navbar End -->
+<!-- Carousel Start -->
+<section class="carousel background-carousel">
+    <div class="container">
+        <div id="first-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-container ps-5 background-carousel">
+                    <div class="mobile-image me-5">
+                        <img src=./img/mobile_image.png alt="Mobile Image" class="img-fluid">
+                    </div>
+                    <div class="text-container carousel-text">
+                        <h4 class="text-white fw-50">WOULD YOU LIKE TO</h4>
+                        <h1 class="text-white font-s-5 text-left ml-2 fs-1">CREATE THE MAGIC</h1>
+                        <p class="fw-50 text-left ml-2">Lorem ipsum dolor sit amet, ipsum dolor sit amet consectetur adipiscing elit ipsum dolor sit amet, ipsum dolor sit amet consectetur adipiscing elit.</p>
+                        <div class="button-container-carousel text-left m-0 p-0 ">
+                            <a href="#" class="text-uppercase carousel-button-text-1 p-2 m-2 text-decoration-none">buy now</a>
+                            <a href="#" class="text-uppercase carousel-button-text-2 p-2 m-2 text-decoration-none">features</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-container  ps-5">
+                    <div class="mobile-image me-5">
+                        <img src=./img/mobile_image.png alt="Mobile Image" class="img-fluid">
+                    </div>
+                    <div class="text-container carousel-text">
+                        <h4 class="text-white fw-50 text-left ml-2">WOULD YOU LIKE TO</h4>
+                        <h1 class="text-white font-s-5 text-left ml-2 fs-1">CREATE THE MAGIC</h1>
+                        <p class="fw-50 text-left ml-2">Lorem ipsum dolor sit amet, ipsum dolor sit amet consectetur adipiscing elit ipsum dolor sit amet, ipsum dolor sit amet consectetur adipiscing elit.</p>
+                        <div class="button-container-carousel text-left m-0 p-0 ">
+                            <a href="#" class="text-uppercase carousel-button-text-1 p-2 m-2 text-decoration-none">buy now</a>
+                            <a href="#" class="text-uppercase carousel-button-text-2 p-2 m-2 text-decoration-none">features</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more carousel items here as needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#first-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon btn-border" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#first-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon btn-border" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+</section>
+<!-- Carousel End -->
+<!-- Features Start -->
+<section class="features py-5">
+    <div class="container">
+            <div class="row g-0 features-row">
+                <div class="col-md-6 col-lg-3 " >
+                    <div class="features-item h-100 py-5">
+                        <div class="features-text">   
+                            <img src=./img/downloads.png alt="...">                            
+                        </div>
+                        <p class="mb-3 mt-3 fw-bold">TRENDING PSD</p>
+                        <p class="mb-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                        <a href="#" class="features-btn text-decoration-none fw-bold features-hover-btn">LEARN MORE</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="features-item h-100 py-5">
+                        <div class="features-text">
+                            <img src=./img/check.png alt="...">
+                        </div>
+                        <p class="mb-3 mt-3 fw-bold">FULL SHORTCODES</p>
+                        <p class="mb-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                        <a href="#" class="features-btn text-decoration-none fw-bold features-hover-btn">LEARN MORE</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="features-item h-100 py-5">
+                        <div class="features-text">
+                            <img src=./img/coding.png alt="...">
+                        </div>
+                        <p class="mb-3 mt-3 fw-bold">CLEAR AND CLEAN</p>
+                        <p class="mb-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                        <a href="#" class="features-btn text-decoration-none fw-bold features-hover-btn">LEARN MORE</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="features-item h-100 py-5">
+                        <div class="features-text">
+                            <img src=./img/cube.png alt="...">
+                        </div>
+                        <p class="mb-3 mt-3 fw-bold">CREATIVE DESIGN</p>
+                        <p class="mb-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                        <a href="#" class="features-btn text-decoration-none fw-bold features-hover-btn">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    <!-- Features End -->
+
+<!--------------DETAILS-START HERE---------------->
+<!-- First Section -->
+<section class="who-we-are mb-0">
+        <div class="container">
+            <div class="card py-5 rounded-0  border-0 details">
+                <div class="row g-0" id="who-we-are">
+                    <div class="col-md-4">
+                        <img src=./img/image-desktop.png class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body mt-2 py-2">
+                            <p class="card-title text-who-we-are fw-bold fs-5">WHO WE ARE</p>
+                            <p class="card-text text-who-we-are fw-bold fs-1">THE CESIS DESIGN</p>
+                            <p class="card-text"><small class="text-who-we-are">Envato Studio is a community of hand-picked designers, developers and digital talent, available to work on your project. From logo design to web development, to video production, we make it easy to connect and work together to get your job done sector leadIn April 2013 we launched fret versions called Microlancer: focused on small design and development ions continue tronaprong.</small></p>
+                            <p class="pb-4"><small class="text-white" >Over de art 12 months our community of talent and bugers quickly grew, as did the size and type of jobs they completed. So, sir ouf first briday we changed our name to Envato Studio to better relica wro be ate.</small></p>
+                            <a href="#"><b class="btn-how-it-workfont btn-how-it-works rounded text-decoration-none">SEE HOW IT WORKS</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- Second Section -->
+<section class="what-we-do mt-0">
+        <div class="container">
+            <div class="card py-5 text-white rounded-0 border-0 detail-sec-2">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body mt-2 py-2">
+                            <p class="card-title text-who-we-are fw-bold fs-5">WHO WE ARE</p>
+                            <p class="card-text text-who-we-are fw-bold fs-1">THE CESIS DESIGN</p>
+                            <p class="card-text"><small class="text-who-we-are">Envato Studio is a community of hand-picked designers, developers and digital talent, available to work on your project. From logo design to web development, to video production, we make it easy to connect and work together to get your job done sector leadIn April 2013 we launched fret versions called Microlancer: focused on small design and development ions continue tronaprong.</small></p>
+                            <p class="pb-4"><small class="text-white" >Over de art 12 months our community of talent and bugers quickly grew, as did the size and type of jobs they completed. So, sir ouf first briday we changed our name to Envato Studio to better relica wro be ate.</small></p>
+                            <a href="#"><b class="btn-how-it-workfont btn-how-it-works rounded text-decoration-none">SEE HOW IT WORKS</b></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src=./img/what-we-do-img.png class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!--------------DETAILS-START HERE---------------->
+<!-------------------Portfolio-starts here-------------------------------------------------------->
+
+<section class="portfolio py-5">
+    <div class="container">
+            <p class="text-center fw-bold fs-5 text-dark m-0 py-0">THE AWESOME</p>
+            <p class="text-center text-uppercase fw-bold fs-1 text-dark m-0 p-0">portfolio</p>
+            <div class="row g-0 py-5 portfolio-row">
+                <div class="col-md-6 col-lg-2">
+                    <div class="portfolio-item p-2 portfolio-btn-1">
+                        <a href="#" class="text-dark text-decoration-none">All works</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="portfolio-item p-2 portfolio-btn-2">
+                       <a href="#" class="text-dark text-decoration-none">Web Design</a> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="portfolio-item p-2 portfolio-btn-2">
+                        <a href="#" class="text-dark text-decoration-none">Photography</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="portfolio-item p-2 portfolio-btn-2">
+                        <a href="#" class="text-dark text-decoration-none">Digital Painting</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="portfolio-item p-2 portfolio-btn-3">
+                        <a href="#" class="text-dark text-decoration-none">Marketing</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="portfolio-item p-2 portfolio-btn-2">
+                        <a href="#" class="text-dark text-decoration-none">Freebires</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card portfolio-btn-2">
+                        <img src=./img/card_img_1.png class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                          <p class="card-title text-uppercase fs-4 fw-bold text-dark">Your Work Title</p>
+                          <p class="card-text">Graphic Design</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card portfolio-btn-2">
+                        <img src=./img/card_img_2.png class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title text-uppercase fs-4 fw-bold text-dark">Your Work Title</p>
+                          <p class="card-text">Graphic Design</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card portfolio-btn-2">
+                          <img src=./img/card_img_3.png class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                            <p class="card-title text-uppercase fs-4 fw-bold text-dark">Your Work Title</p>
+                            <p class="card-text">Graphic Design</p>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                      <div class="card portfolio-btn-2">
+                        <img src=./img/card_img_4.png class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title text-uppercase fs-4 fw-bold text-dark">Your Work Title</p>
+                          <p class="card-text">Graphic Design</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card portfolio-btn-2">
+                        <img src=./img/card_img_5.png class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <p class="card-title text-uppercase fs-4 fw-bold text-dark">Your Work Title</p>
+                          <p class="card-text">Graphic Design</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card portfolio-btn-2">
+                          <img src=./img/card_img_6.png class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                            <p class="card-title text-uppercase fs-4 fw-bold text-dark">Your Work Title</p>
+                            <p class="card-text">Graphic Design</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            <div class="text-center py-5">
+                <a href="#"><b class="text-uppercase portfolio-btm-btn text-decoration-none">check all work</b></a>
+            </div>
+        </div>
+    </section>
+<!-------------------Portfolio-ends here-------------------------------------------------------->
+<!---------------------Testonomial start here------------------------------------------------------------------------->
+<section class="testonomial bg-img position-relative">
+            <div id="testonomial-carousel-slidesonly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="pt-5">
+                            <p class="text-uppercase mb-0 pb-0 fs-5 fw-bold text-white">in the press</p>
+                            <p class="text-uppercase text-white fs-2 fw-bold">customer say</p>
+                            <p class="mb-0 pb-0 text-white">Envato is both a pioneer in creative and web development education, and a one-stop shop for</p>
+                            <p class="mb-0 pb-0 text-white">millions of designers needing a range digital assets, from stock multimedia,</p>
+                            <p class="mb-0 pb-0 text-white">to web templates, and even snippets of code.</p><br>
+                            <p class="mb-0 pb-0 text-white fw-bold fs-5">SAM ISBISAR</p>
+                            <p class="fs-6 text-white">Lead Designer</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="pt-5">
+                            <p class="text-uppercase mb-0 pb-0 fs-5 fw-bold text-white">in the press</p>
+                            <p class="text-uppercase text-white fs-2 fw-bold">customer say</p>
+                            <p class="mb-0 pb-0 text-white">Envato is both a pioneer in creative and web development education, and a one-stop shop for</p>
+                            <p class="mb-0 pb-0 text-white">millions of designers needing a range digital assets, from stock multimedia,</p>
+                            <p class="mb-0 pb-0 text-white">to web templates, and even snippets of code.</p><br>
+                            <p class="mb-0 pb-0 text-white fw-bold fs-5">SAM ISBISAR</p>
+                            <p class="fs-6 text-white">Lead Designer</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="pt-5">
+                            <p class="text-uppercase mb-0 pb-0 fs-5 fw-bold text-white">in the press</p>
+                            <p class="text-uppercase text-white fs-2 fw-bold">customer say</p>
+                            <p class="mb-0 pb-0 text-white">Envato is both a pioneer in creative and web development education, and a one-stop shop for</p>
+                            <p class="mb-0 pb-0 text-white">millions of designers needing a range digital assets, from stock multimedia,</p>
+                            <p class="mb-0 pb-0 text-white">to web templates, and even snippets of code.</p><br>
+                            <p class="mb-0 pb-0 text-white fw-bold fs-5">SAM ISBISAR</p>
+                            <p class="fs-6 text-white">Lead Designer</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="pt-5">
+                            <p class="text-uppercase mb-0 pb-0 fs-5 fw-bold text-white">in the press</p>
+                            <p class="text-uppercase text-white fs-2 fw-bold">customer say</p>
+                            <p class="mb-0 pb-0 text-white">Envato is both a pioneer in creative and web development education, and a one-stop shop for</p>
+                            <p class="mb-0 pb-0 text-white">millions of designers needing a range digital assets, from stock multimedia,</p>
+                            <p class="mb-0 pb-0 text-white">to web templates, and even snippets of code.</p><br>
+                            <p class="mb-0 pb-0 text-white fw-bold fs-5">SAM ISBISAR</p>
+                            <p class="fs-6 text-white">Lead Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots dot-style">
+                    <button type="button" data-bs-target="#testonomial-carousel-slidesonly" data-bs-slide-to="0" class="dot active"></button>
+                    <button type="button" data-bs-target="#testonomial-carousel-slidesonly" data-bs-slide-to="1" class="dot"></button>
+                    <button type="button" data-bs-target="#testonomial-carousel-slidesonly" data-bs-slide-to="2" class="dot"></button>
+                    <button type="button" data-bs-target="#testonomial-carousel-slidesonly" data-bs-slide-to="3" class="dot"></button>
+                </div>
+                
+            </div>
+</section>
+<!---------------------Testonomial ends here------------------------------------------------------------------------->
+<!--------------------------Services starts here------------------------------------------------>
+<section class="services">
+    <div class="container position-relative ps-4">
+                <div class="row">
+                    <div class="col-md-4 mt-5 mb-5">
+                        <!-- First Div -->
+                        <p class="text-uppercase fs-5 fw-bold m-0">the awesome</p>
+                        <p class="text-uppercase fs-2 fw-bold">services</p>
+                        <p>Envato Studio is a community of hand-picked designers, 
+                            developers and digital talent, available to work on your project. From logo design to web development, 
+                            to video production, we make it easy to connect and work together to get your job done. See how it warks.
+                            <br><br>In April 2013 we launched a beta version called Microlancer, as did the size and 
+                            type of jobs they completed. </p>
+                            <div class="accordion mb-2 background-color-accordion" id="accordionExample">
+                                <div class="accordion-item rounded-0">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <strong>WE MAKE GREAT DESIGN</strong>
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow.</strong>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion mb-2" id="accordionExample">
+                                <div class="accordion-item rounded-0">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        <strong>WE MAKE WORDPRESS THEME</strong>
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow.</strong>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion mb-2" id="accordionExample">
+                                <div class="accordion-item rounded-0">
+                                  <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        <strong>WE DO GREAT SUPPORT</strong>
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow.</strong>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion mb-2" id="accordionExample">
+                                <div class="accordion-item rounded-0">
+                                  <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        <strong>REGULAR UPDATE</strong>
+                                    </button>
+                                  </h2>
+                                  <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow.</strong>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion mb-2" id="accordionExample">
+                                <div class="accordion-item rounded-0">
+                                  <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                        <strong>THE BEST SELLER</strong>
+                                    </button>
+                                  </h2>
+                                  <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow.</strong>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    <!-- Second Div -->
+                    <div class="col-md-8 mt-0 pt-0 mb-0 pb-0 services-bg-1">
+                        <div>
+                          <div>
+                            <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                              <div class="col">
+                                <div class="card portfolio-btn-2 border-0 h-100">
+                                  <div class="d-flex justify-content-center align-items-center m-3 p-3">
+                                    <img src=img/services_icon_1.png class="card-img-top services-size w-25" alt="...">
+                                  </div>
+                                  <div class="card-body text-center">
+                                    <p class="card-title text-uppercase fw-bold text-dark">App Design</p>
+                                    <p class="card-text">Envato Studio is a community of hand-picked designers.</p>
+                                    <a href="#" class="services-btn-bg text-decoration-none fw-bold">Learn More</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card portfolio-btn-2 border-0 h-100">
+                                  <div class="d-flex justify-content-center align-items-center m-3 p-3">
+                                    <img src=img/services_icon_2.png class="card-img-top services-size w-25" alt="..." >
+                                  </div>
+                                  <div class="card-body text-center">
+                                    <p class="card-title text-uppercase fw-bold text-dark">Web Design</p>
+                                    <p class="card-text">Envato Studio is a community of hand-picked designers.</p>
+                                    <a href="#" class="services-btn-bg text-decoration-none fw-bold">Learn More</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card portfolio-btn-2 border-0 h-100">
+                                  <div class="d-flex justify-content-center align-items-center m-3 p-3 ">
+                                    <img src=img/services_icon_3.png class="card-img-top services-size w-25" alt="..." >
+                                  </div>
+                                  <div class="card-body text-center">
+                                    <p class="card-title text-uppercase fw-bold text-dark">Buisness Analytics</p>
+                                    <p class="card-text">Envato Studio is a community of hand-picked designers.</p>
+                                    <a href="#" class="services-btn-bg text-decoration-none fw-bold">Learn More</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card portfolio-btn-2 border-0 h-100">
+                                  <div class="d-flex justify-content-center align-items-center m-3 p-3">
+                                    <img src=img/services_icon_4.png class="card-img-top services-size w-25" alt="..." >
+                                  </div>
+                                  <div class="card-body text-center">
+                                    <p class="card-title text-uppercase fw-bold text-dark">wordpress theme</p>
+                                    <p class="card-text">Envato Studio is a community of hand-picked designers.</p>
+                                    <a href="#" class="services-btn-bg text-decoration-none fw-bold">Learn More</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card portfolio-btn-2 border-0 h-100">
+                                  <div class="d-flex justify-content-center align-items-center m-3 p-3">
+                                    <img src=img/services_icon_5.png class="card-img-top services-size w-25" alt="..." >
+                                  </div>
+                                  <div class="card-body text-center">
+                                    <p class="card-title text-uppercase fw-bold text-dark">SEO Service</p>
+                                    <p class="card-text">Envato Studio is a community of hand-picked designers.</p>
+                                    <a href="#" class="services-btn-bg text-decoration-none fw-bold">Learn More</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card portfolio-btn-2 border-0 h-100">
+                                  <div class="d-flex justify-content-center align-items-center m-3 p-3">
+                                    <img src=img/services_icon_6.png class="card-img-top services-size w-25" alt="..." >
+                                  </div>
+                                  <div class="card-body text-center">
+                                    <p class="card-title text-uppercase fw-bold text-dark">social marketing</p>
+                                    <p class="card-text">Envato Studio is a community of hand-picked designers.</p>
+                                    <a href="#" class="services-btn-bg text-decoration-none fw-bold">Learn More</a>
+                                  </div>
+                                </div>
+                              </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+<!--------------------------Services ends here------------------------------------------------>
+<!-----------Creative works start here---------------->
+<section class="creative-work-2">
+      <div class="container">
+        <div class="row d-flex align-items-center py-5">
+          <div class="col-md-6">
+            <!-- Content for the first column -->
+            <img src=./img/creative-work-img-1.png alt="" class="img_size">
+          </div>
+          <div class="col-md-6">
+            <!-- Content for the first column -->
+            <p class="text-uppercase text-white fw-100 fs-5 m-0 p-0">what we do</h5>
+            <p class="text-uppercase text-white fw-bold fs-2 m-0 p-0">creative works</h3>
+            <p class="text-white">Envato Studio is a community of hand-picked designers, 
+              developers and digital talent, available to work on your project. From logo design to web development, 
+              to video production, we make it easy to connect and work together to get your job done.</p>
+            <a href="#" class="text-uppercase p-3 mt-4  text-decoration-none btn-creative-work-2">see how it works</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  
+<!-----------Creative works ends here---------------->
+<!-------------------Counts-starts here-------------------------------------------------------->
+
+<section class="counts py-5">
+    <div class="container">
+            <div class="row g-0 portfolio-row">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="py-2 text-center">
+                            <a class="text-dark fs-1 fw-bold">7890</a><br>
+                            <i class="fas fa-times" style="color: #000000;"></i>
+                            <br>
+                            <a class="fs-5 fw-100 text-dark">COFFEE CUPS</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="py-2 text-center">
+                            <a class="text-dark fs-1 fw-bold">1 M</a><br>
+                            <i class="fas fa-times" style="color: #000000;"></i><br>
+                            <a class="fs-5 fw-1000 text-uppercase text-dark">Subscribers</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="py-2 text-center">
+                            <a class="text-dark fs-1 fw-bold">1509</a><br>
+                            <i class="fas fa-times" style="color: #000000;"></i><br>
+                            <a class="fs-5 fw-100 text-uppercase text-dark">customers</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="py-2 text-center">
+                            <a class="text-dark fs-1 fw-bold">5972</a><br>
+                            <i class="fas fa-times" style="color: #000000;"></i><br>
+                            <a class="fs-5 fw-100 text-uppercase text-dark">purchased</a>
+                        </div>
+                    </div>
+                </div>
+                  </div>
+            </div>
+        </div>
+</section>
+<!-------------------counts-ends here-------------------------------------------------------->
+<!-----------Creative-2 works start here---------------->
+<section class="creative-2 py-5">
+   <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+            <!-- Content for the first column -->
+            <p class="text-uppercase text-white fw-100 fs-5 m-0 py-0 py-1">what we do</h5>
+                <p class="text-uppercase text-white fw-bold fs-2 m-0 p-0 py-1">creative works</h3>
+                <p class="text-white py-1">Envato Studio is a community of hand-picked designers, 
+                  developers and digital talent, available to work on your project. From logo design to web development, 
+                  to video production, we make it easy to connect and work together to get your job done.</p>
+            <a href="#" class="text-uppercase p-3 mt-4  text-decoration-none btn-creative-work-2">see how it works</a>
+          </div>
+          <div class="col-md-6 col-sm-12 pt-4">
+            <!-- Content for the first column -->
+            <img src=./img/46353.jpg alt="">
+          </div>
+        </div>
+      </div>
+  </section>
+<!-----------Creative-2 works ends here---------------->
+<!-----------price plan start here---------------->
+<section class="priceplan py-5">
+    <div class>
+        <div class="container">
+            <h6 class="text-center text-uppercase fw-bold">The price</h6>
+            <h1 class="text-center text-uppercase fw-bold">our plans</h1>
+            <div class="row g-0 p-0 m-0 plan-border">
+                <div class="columns p-0">
+                    <ul class="price">
+                        <li class="header"><b class>STANDARD</b></li>
+                        <li>
+                            <div class="pricing-column text-center header-price">
+                                <div class="pricing-price">
+                                    <sup  class="font-s-1"><b>$</b></sup>
+                                    <span class="font-s-2"><b>99</b></span>
+                                </div>
+                                <div class="pricing-period font-s-3">
+                                    <b>MONTHLY</b>
+                                </div>
+                            </div>
+                        </li>
+                        <li>1 Hosting</li>
+                        <li>2Gb Storage</li>
+                        <li>1 PSD</li>
+                        <li>1 WP Installation</li>
+                        <li>1 Domain</li>
+                        <li>1GB Bandwidth</li>
+                        <li><a href="#" class="p-3 rounded-5 text-uppercase btn-s">Learn More</a></li>
+                    </ul>
+                </div>
+
+                <div class="columns p-0" >
+                    <ul class="price">
+                        <li class="header"><b>PROFESSIONAL</b></li>
+                        <li>
+                            <div class="pricing-column text-center header-price">
+                                <div class="pricing-price">
+                                    <sup  class="font-s-1"><b>$</b></sup>
+                                    <span class="font-s-2"><b>299</b></span>
+                                </div>
+                                <div class="pricing-period font-s-3">
+                                    <b>MONTHLY</b>
+                                </div>
+                            </div>
+                        </li>
+                        <li>10 Hosting</li>
+                            <li>50Gb Storage</li>
+                            <li>10 PSD</li>
+                            <li>10 WP Installation</li>
+                            <li>10 Domain</li>
+                            <li>100GB Bandwidth</li>
+                        <li><a href="#" class="p-3 rounded-5 text-uppercase btn-s">Learn More</a></li>
+                    </ul>
+                </div>
+
+                <div class="columns p-0">
+                    <ul class="price">
+                        <li class="header"><b class>BUSINESS</b></li>
+                        <li>
+                            <div class="pricing-column text-center header-price">
+                                <div class="pricing-price">
+                                    <sup class="font-s-1"><b>$</b></sup>
+                                    <span class="font-s-2"><b>399</b></span>
+                                </div>
+                                <div class="pricing-period font-s-3">
+                                    <b>MONTHLY</b>
+                                </div>
+                            </div>
+                        </li>
+                        <li>20 Hosting</li>
+                            <li>100Gb Storage</li>
+                            <li>20 PSD</li>
+                            <li>20 WP Installation</li>
+                            <li>20 Domain</li>
+                            <li>Bandwidth Unlimited</li>
+                        <li><a href="#" class="p-3 rounded-5 text-uppercase btn-s">Learn More</a></li>
+                    </ul>
+                </div>
+                 
+                    
+      </div>
+      </div>
+  </section>
+
+<!-----------price plan ends here---------------->
+<!-------------News Start Here--------->
+
+<section class="news mb-0">
+    <div class=" pt-5 bg-color">
+        <div class="container">
+            <div class="text-center py-3 ">
+                <h6 class="text-uppercase text-white">YOSEMITE NEWS</h6>
+                <h1 class="text-uppercase fw-1 text-white">SOMETHING EXCITING TO ANNOUNCE</h1>
+            </div>
+            <!------News gallery starts------------->
+            <div class="container ">
+                <div class="row">
+                    <div class="col-4 m-0 p-0 position-relative hoverimg ">
+                        <img src=./img/gallery-img1.jpg alt="" class="image_style">
+                        <div class="position-absolute newspost-date mr-0 pr-0">
+                            <p class="date-text">21, January 2018</p>
+                        </div>
+                        <div class=" image-text text-white">
+                            <p class="overlay-text text-uppercase fs-5 mb-0 py-2">How is wordpress builder?</p> 
+                        </div>
+                    </div>
+                    <div class="col-8 m-0 p-0">
+                        <div class="row g-0">
+                            <div class="col-4 position-relative hoverimg w-33.3">
+                                <img src=./img/gallery-img2.jpg alt="" class="image_style">
+                                <div class="image-text text-white text-center">
+                                    <p class="overlay-text text-uppercase fs-5 mb-0 py-2"> Text overlay on Image 2 </p>
+                                </div>
+                            </div>
+                            <div class="col-4 position-relative hoverimg w-33.3">
+                                <img src=./img/gallery-img3.jpg alt="" class="image_style" >
+                                <div class="image-text text-white text-center">
+                                    <p class="overlay-text text-uppercase fs-5 mb-0 py-2"> Text overlay on Image 3 </p>
+                                </div>
+                            </div>
+                            <div class="col-4 position-relative hoverimg w-33.3">
+                                <img src=./img/gallery-img5.jpg alt="" class="image_style" >
+                                <div class="image-text text-white text-center">
+                                  <p class="overlay-text text-uppercase fs-5 mb-0 py-2">  Text overlay on Image 4 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-6 position-relative hoverimg">
+                                <img src=./img/gallery-img4.jpg alt="" class="image_style" >
+                                <div class="image-text text-white text-center">
+                                    <p class="overlay-text text-uppercase fs-5 mb-0 py-2">   Text overlay on Image 5 </p>
+                                </div>
+                            </div>
+                            <div class="col-6 position-relative hoverimg">
+                                <img src=./img/gallery-img6.jpg alt="" class="image_style">
+                                <div class="image-text text-white text-center">
+                                    <p class="overlay-text text-uppercase fs-5 mb-0 py-2">  Text overlay on Image 6 </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+ <!------News gallery ends------------->
+ 
+<!-- End News Section -->
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container py-3 ">
+        <div class="text-center">
+            <a href="index.html">
+                <img src=/img/footer_icon.png alt="...">
+            </a>
+        </div>
+        <hr class="w-100 fw-bold">
+        <div class="social_icon">
+            <a href=".."><i class="fab fa-facebook-f"></i></a>
+            <a href=".."><i class="fab fa-twitter"></i></a>
+            <a href=".."><i class="fab fa-dribbble"></i></a>
+            <a href=".."><i class="fab fa-linkedin-in"></i></a>
+            <a href=".."><i class="fab fa-google-plus-g"></i></a>
+        </div>
+    </div>
+ 
+<!-- End Footer Section -->
+
+<!-- Copyright Section -->
+<div class="d-lg-flex copyright">
+    <div class="container py-3 ">
+        <div class="text-center">
+            &copy; 2015-2023 <span class="font-copyright">Cesis PSD Template</span>. All Rights Reserved. Design with love by Tranmautritam
+        </div>
+    </div>
+</div>               
+<!----------Copyrights ends here-->
+
+            
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!---Accordion Javascript----->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+		$('.card-header').click(function() {
+			$(this).find('i').toggleClass('fas fa-plus fas fa-minus');
+		});
+	</script>
+</body>
+
+</html>
