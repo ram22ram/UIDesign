@@ -1,0 +1,304 @@
+.custom-container {
+    background-color: #eeeeee;
+    width: 100%;
+
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 15px; 
+}
+.main{
+    background-color: #eeeeee;
+    height: 100%;
+}
+.overlay-text {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    overflow: hidden;
+}
+
+.faded-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: brightness(50%) contrast(70%); 
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.grid-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.grid-item {
+    padding: 20px;
+    color: #ffffff;
+}
+
+
+
+.menu-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+h4, h2, h5 {
+    color: #000; 
+}
+
+h2 span {
+    color: #ff0000;
+}
+
+
+.nav-menu {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 20px;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom 0.3s ease; 
+}
+
+.nav-menu a:hover {
+    border-bottom: 2px solid red;
+}
+
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.testimonials{
+    padding-top: 20px;
+}
+.vertical-align {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5; 
+}
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.yummy{
+    font-size:xx-large;
+
+}
+.starterimg{
+    width: 150px;
+}
+card-body{
+    display: flex;
+}
+.custom-center-block {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card-styl{
+    margin: 5px;
+    padding: 5px;
+}
+.events{
+    border-bottom: 2px solid #dc5a5a;
+}
+.img-overlay{
+    
+    left: 350px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 70%;
+    
+    color: #000000;
+}
+.main-card-1{
+    width: 24rem;
+    margin: 10px;
+    margin-right: 20px;
+    
+
+}
+.main-card-anchortag1{
+    border: none;
+    border-radius: 15px;
+    width: 135px;
+    background-color: #dc5a5a;
+
+}
+.main-card-2{
+    width: 17rem;
+    height: 17rem;
+    margin-right: 20px;
+    margin-top: 55px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    
+}
+.main-card-2-img{
+    border-radius: 15px;
+
+}
+.main-card-3{
+    width: 17rem;
+    height: 17rem;
+    margin-right: 20px;
+    margin-top: 55px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    
+}
+.carousel-img{
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    width: 50%;
+
+}
+
+.social-icon1{
+    height: 25px;
+    width: 25px;
+
+}
+.icons-play{
+    height: 25px;
+
+}
+.footer-class1{
+    margin: 5px;
+    padding: 5px;
+    width: 100%
+}
+.footer-img-1{
+    margin-top: 3px;
+    height: 55px;
+}
+
+.footer-class2{
+    margin-right: 117px;
+
+}
+.footerdiv-1{
+    width: 650px;
+    margin: 5px; 
+    padding: 5px;
+
+}
+.formdiv{
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+.formtext{
+    margin-right: 7px;
+}
+.btn-submit{
+    color: #ffffff;
+    margin-top: 15px;
+    border-radius: 20%;
+
+}
+.imgiconphone{
+    margin-right: 15px;
+
+}
+.flexcontainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width:100%
+}
+
+.flexbox {
+    width: 40%;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+}
+
+.footer-section img {
+    width: 30px; /* Adjust the size as needed */
+    margin-right: 10px;
+}
+
+.footer-section phone, .footer-section email {
+    margin-top: 5px;
+}
+
+.copyright {
+    text-align: center;
+}
+.height{
+    height: 100;
+}
+.nav-item a:hover{
+    text-decoration: underline solid #000;
+    font-weight: 500;
+    color: #000;
+}
+.btn{
+    background-color: #dc5a5a;
+}
